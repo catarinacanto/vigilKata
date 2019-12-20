@@ -1,0 +1,17 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mTennisGameUnitSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPoints[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- can be added to each player[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLove[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be description for score 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFifteen[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be description for score 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThirty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be description for score 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mForty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be description for score 3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAdvantage[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should describe when least three points have been scored by each side and a player has one more point than his opponent[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDeuce[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be description when at least three points have been scored by each player and the scores are equal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGame[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be won by the first player to have won at least four points in total and with at least two points more than the opponent[0m[0m
