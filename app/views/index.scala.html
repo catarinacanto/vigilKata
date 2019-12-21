@@ -1,0 +1,27 @@
+@(playerForm: Form[(String, String)])(implicit request: RequestHeader, messagesProvider: MessagesProvider)
+@import helper._
+
+@main(title = "Tennis Game") {
+
+    <h1>Choose Players For Tennis Game:</h1>
+
+    @form(action = routes.HomeController.play(), args = Symbol("id") -> "playerForm") {
+
+        @inputText(
+            field = playerForm("player1"),
+            args = Symbol("_label") -> "Player 1 name", Symbol("placeholder") -> "Player 1"
+        )
+
+        @inputText(
+            field = playerForm("player2"),
+            args = Symbol("_label") -> "Player 2 name", Symbol("placeholder") -> "Player 2"
+        )
+
+
+        <p class="buttons">
+            <input type="submit" id="submit">
+         <p>
+
+    }
+
+}

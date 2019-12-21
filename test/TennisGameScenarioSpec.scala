@@ -1,7 +1,5 @@
-package com.vigil.kata
-
-import org.scalatest.{GivenWhenThen, FeatureSpec, Matchers}
-import scala.util.Sorting
+import models.{Player, TennisGame}
+import org.scalatest.{FeatureSpec, GivenWhenThen, Matchers}
 
 class TennisGameScenarioTest extends FeatureSpec with GivenWhenThen with Matchers {
 

@@ -1,4 +1,4 @@
-package com.vigil.kata
+package models
 
 object Score extends Enumeration {
   type Score = Value

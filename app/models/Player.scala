@@ -1,14 +1,23 @@
-package com.vigil.kata
+package models
 
-class Player(val name: String) extends Ordered[Player] {
+case class Player(name: String) extends Ordered[Player] {
   val pointsDescription = Array(Score.love.toString, Score.fifteen.toString, Score.thirty.toString, Score.forty.toString)
   var score = 0
+  var win: String = name + " wins ball"
   def scoreDescription: String = pointsDescription(score)
   def compare(that: Player): Int = this.score - that.score
-  def winBall() { score += 1}
+  def winBall(): String = {
+    score += 1
+    win
+  }
 }
 
 object Player {
-  def apply(name: String): Player = { new Player(name)}
+  def apply(name: String): Player = {
+    new Player(name)
+  }
 }
+
+
+
 

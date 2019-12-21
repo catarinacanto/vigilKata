@@ -1,6 +1,6 @@
-package com.vigil.kata
+import models.{Player, TennisGame}
+import org.scalatest.{FlatSpec, Matchers}
 
-import org.scalatest.{ Matchers, FlatSpec}
 import scala.util.Sorting
 
 class TennisGameUnitSpec extends FlatSpec with Matchers {
