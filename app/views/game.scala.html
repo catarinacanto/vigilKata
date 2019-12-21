@@ -1,0 +1,20 @@
+@import scala.collection.mutable.ListBuffer
+@(player1: String, player2: String, game : ListBuffer[String])
+
+@main("Tennis Game") {
+
+    <ul>
+        <p>Hello @player1 and @player2!</p>
+    </ul>
+
+    <ul>
+    @for(i <- 0 until game.length) {
+        <p>@game(i)</p>
+    }
+    </ul>
+
+    <p class="buttons">
+        <a href="@routes.HomeController.index">Back</a>
+    </p>
+
+}
