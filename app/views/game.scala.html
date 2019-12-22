@@ -1,8 +1,12 @@
 @import scala.collection.mutable.ListBuffer
-@(player1: String, player2: String, game : ListBuffer[String])
+@(player1: String, player2: String, game: ListBuffer[String])
+<script>
+        function locationreload() {
+            location.reload();
 
+        }
+</script>
 @main("Tennis Game") {
-
     <ul>
         <p>Hello @player1 and @player2!</p>
     </ul>
@@ -17,4 +21,9 @@
         <a href="@routes.HomeController.index">Back</a>
     </p>
 
+
+    <p class="buttons">
+        <a onclick="locationreload()">New Game</a>
+
+    </p>
 }

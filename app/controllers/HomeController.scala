@@ -38,7 +38,7 @@ class HomeController @Inject()(messagesAction: MessagesActionBuilder, components
     Ok(views.html.index(playerForm))
   }
 
-  def post(): Action[AnyContent] = TODO
+  def post: Action[AnyContent] = TODO
 
   def play: Action[AnyContent] = messagesAction { implicit request: MessagesRequest[AnyContent] =>
     playerForm.bindFromRequest.fold(
@@ -49,8 +49,5 @@ class HomeController @Inject()(messagesAction: MessagesActionBuilder, components
       }
     )
   }
-
-
-
 
 }
