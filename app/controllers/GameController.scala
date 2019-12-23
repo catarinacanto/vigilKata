@@ -7,14 +7,11 @@ import play.api.data.Forms._
 import services.TennisGameService
 import views.html
 
-import scala.collection.mutable.ListBuffer
-
-
 /**
  * This controller creates an `Action` to handle HTTP requests to the
  * application's home page.
  */
-class HomeController @Inject()(messagesAction: MessagesActionBuilder, components: ControllerComponents)
+class GameController @Inject()(messagesAction: MessagesActionBuilder, components: ControllerComponents)
   extends AbstractController(components) {
 
   val playerForm = Form(

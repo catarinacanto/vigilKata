@@ -10,16 +10,14 @@ class TennisGameService {
     val firstPlayer = Player(player1)
     val secondPlayer = Player(player2)
     val game = new TennisGame(firstPlayer, secondPlayer)
-    val gameScore = new ListBuffer[String]()
+    val gameScore = new ListBuffer[String]
 
     while (!game.score.contains("won")) {
-      if (getRandomNumber % 2 == 0) gameScore += firstPlayer.winBall() else gameScore += secondPlayer.winBall()
+      if (getRandomNumber % 2 == 0) gameScore += firstPlayer.winBall else gameScore += secondPlayer.winBall
       gameScore += game.score
     }
-
     gameScore
   }
-
 
   def getRandomNumber: Int = {
     val random = new scala.util.Random
