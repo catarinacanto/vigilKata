@@ -12,4 +12,5 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 # Hello action
 GET     /game                       controllers.GameController.play
 
+
 POST     /post                      controllers.GameController.post

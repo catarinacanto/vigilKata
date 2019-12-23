@@ -9,7 +9,7 @@
 
 @main("Tennis Game") {
     <ul>
-        <p>Hello @player1 and @player2!</p>
+        <h3>@player1 and @player2 are playing!</h3>
     </ul>
 
     <ul>
@@ -19,11 +19,12 @@
     </ul>
 
     <p class="buttons">
-        <a href="@routes.HomeController.index">Back</a>
+        <a href="@routes.GameController.index">Back</a>
     </p>
-
 
     <p class="buttons">
         <a onclick="locationreload()">New Game</a>
     </p>
+
+
 }

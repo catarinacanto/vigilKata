@@ -5,7 +5,7 @@
 
     <h1>Choose Players For Tennis Game:</h1>
 
-    @form(action = routes.HomeController.play, args = Symbol("id") -> "playerForm") {
+    @form(action = routes.GameController.play, args = Symbol("id") -> "playerForm") {
 
         @inputText(
             field = playerForm("player1"),
