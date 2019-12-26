@@ -8,6 +8,7 @@
 </script>
 
 @main("Tennis Game") {
+    <div>
     <ul>
         <h3>@player1 and @player2 are playing!</h3>
     </ul>
@@ -17,14 +18,9 @@
         <p>@game(i)</p>
     }
     </ul>
-
-    <p class="buttons">
-        <a href="@routes.GameController.index">Back</a>
-    </p>
-
-    <p class="buttons">
-        <a onclick="locationreload()">New Game</a>
-    </p>
-
-
+    </div>
+    <div>
+    <a class="btn btn-primary" href="@routes.GameController.index" role="button" >Back</a>
+    <a class="btn btn-primary" onclick="locationreload()"role="button" >New Game</a>
+    </div>
 }
